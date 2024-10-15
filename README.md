@@ -1,4 +1,5 @@
 # LUV
+<<<<<<< HEAD
 
 Ce projet est un réseau social avec les fonctionnalités suivantes :
 - Chat 1v1 et chat de groupe
@@ -34,3 +35,5 @@ mon_reseau_social/
 │       └── threads.lua
 └── README.md
 # LUV
+=======
+>>>>>>> b71f062f6c85ba7166e81d4e0ea832ad648b57c9
