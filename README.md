@@ -36,4 +36,12 @@ mon_reseau_social/
 └── README.md
 # LUV
 =======
->>>>>>> b71f062f6c85ba7166e81d4e0ea832ad648b57c9
+
+gcc -o server main.c -I/opt/homebrew/opt/libmicrohttpd/include -L/opt/homebrew/opt/libmicrohttpd/lib -lmicrohttpd
+
+gcc -o server main.c -I/opt/homebrew/opt/libmicrohttpd/include -L/opt/homebrew/opt/libmicrohttpd/lib -lmicrohttpd -lsqlite3
+
+gcc -o server main.c -I/opt/homebrew/opt/libmicrohttpd/include -L/opt/homebrew/opt/libmicrohttpd/lib -lmicrohttpd -lsqlite3
+./server
+
+gcc -o server main.c -I/opt/homebrew/opt/libmicrohttpd/include -L/opt/homebrew/opt/libmicrohttpd/lib -lmicrohttpd -lsqlite3

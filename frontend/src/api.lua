@@ -6,17 +6,17 @@ function api.send_message(message)
 
     local response_body = {}
     local res, code, headers, status = http.request {
-        url = "http://localhost:3000/messages",
+        url = "http://localhost:8888",
         method = "POST",
         headers = {
-            ["Content-Type"] = "application/json"
+            ["Content-Type"] = "application/x-www-form-urlencoded"
         },
-        source = ltn12.source.string(message),
+        source = ltn12.source.string("message=" .. message),
         sink = ltn12.sink.table(response_body)
     }
 
-    if code == 201 then
-        print("Message envoyé avec succès !")
+    if code == 200 then
+        print("Message envoyé !")
     else
         print("Erreur lors de l'envoi du message.")
     end
